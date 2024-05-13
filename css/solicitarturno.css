@@ -40,14 +40,70 @@ footer {
 main {
   background-color: #40b5bc;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center; /* Centrar verticalmente */
+  align-items: center; /* Centrar horizontalmente */
   flex-grow: 1;
+}
+
+h2 {
+  margin-top: 1em;
 }
 
 nav {
   display: flex;
   gap: 1em;
+}
+
+/* Estilos para el formulario */
+form {
+  margin: 10px auto;
+  max-width: 600px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+/* Estilos para los fieldset */
+fieldset {
+  margin-bottom: 20px;
+  border: none;
+}
+
+/* Estilos para los labels */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Estilos para los inputs */
+input[type="text"],
+input[type="number"],
+input[type="submit"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Estilos para los radio buttons */
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+/* Estilos para el submit button */
+input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
 }
 
 @media only screen and (max-width: 320px) {
