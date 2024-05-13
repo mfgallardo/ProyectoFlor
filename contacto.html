@@ -27,30 +27,57 @@
 
     <main>
       <h2>Contacto</h2>
-      <form action="#" method="post" enctype="multipart/form-data">
-        <label class="item1" for="nombre">Nombre</label>
-        <input class="item1" type="text" id="nombre" name="nombre" />
-        <label class="item2" for="apellido">Apellido</label>
-        <input class="item2" type="text" id="apellido" name="apellido" />
-        <label class="item3" for="mail">Mail de contacto</label>
-        <input class="item3" type="email" id="mail" name="mail" />
-        <label class="item4" for="telefono">Teléfono</label>
-        <input class="item4" type="tel" id="telefono" name="telefono" />
-        <label class="item5" for="region">Región donde vive</label>
-        <input class="item5" type="radio" id="region" value="CABA" />CABA
-        <input class="item5" type="radio" value="AMBA" />AMBA
-        <input class="item5" type="radio" value="Interior del país" />Interior
-        del país
-        <label class="item6" for="consulta">Escriba su consulta</label>
-        <input class="item6" type="text" id="consulta" name="consulta" />
-        <label class="item7" for="imagen">Seleccione una imagen</label>
-        <input class="item7" type="file" id="imagen" accept="imagen/*" />
-        <label class="item9" for="respuesta">Medio de contacto preferido</label>
-        <select class="item9" id="respuesta">
-          <option>Correo</option>
-          <option>Teléfono</option>
-        </select>
-        <input class="item8" type="submit" value="Enviar" />
+      <form
+        action="#"
+        method="post"
+        enctype="multipart/form-data"
+        class="form-contact"
+      >
+        <div class="grid-container">
+          <label class="item1" for="nombre">Nombre</label>
+          <input class="item2" type="text" id="nombre" name="nombre" />
+
+          <label class="item1" for="apellido">Apellido</label>
+          <input class="item2" type="text" id="apellido" name="apellido" />
+
+          <label class="item1" for="mail">Mail de contacto</label>
+          <input class="item2" type="email" id="mail" name="mail" />
+
+          <label class="item1" for="telefono">Teléfono</label>
+          <input class="item2" type="tel" id="telefono" name="telefono" />
+
+          <label class="item1">Región donde vive</label>
+          <div class="item2">
+            <input type="radio" id="region-caba" name="region" value="CABA" />
+            <label for="region-caba">CABA</label>
+            <input type="radio" id="region-amba" name="region" value="AMBA" />
+            <label for="region-amba">AMBA</label>
+            <input
+              type="radio"
+              id="region-interior"
+              name="region"
+              value="Interior del país"
+            />
+            <label for="region-interior">Interior del país</label>
+          </div>
+
+          <label class="item1" for="consulta">Escriba su consulta</label>
+          <textarea class="item2" id="consulta" name="consulta"></textarea>
+
+          <label class="item1" for="imagen">Seleccione una imagen</label>
+          <input class="item2" type="file" id="imagen" accept="imagen/*" />
+
+          <label class="item1" for="respuesta"
+            >Medio de contacto preferido</label
+          >
+          <select class="item2" id="respuesta" name="respuesta">
+            <option>Correo</option>
+            <option>Teléfono</option>
+          </select>
+        </div>
+        <div class="div-submit">
+          <input class="item-submit" type="submit" value="Enviar" />
+        </div>
       </form>
     </main>
     <footer>
