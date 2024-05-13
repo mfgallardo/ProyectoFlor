@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solicitar turno</title>
+    <script
+      src="https://kit.fontawesome.com/147c328576.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" href="./imagenes/Estetoscopio.ico" />
+    <link rel="stylesheet" href="./css/solicitarturno.css" />
+  </head>
+  <body>
+    <header>
+      <h1>
+        <i class="fa-solid fa-stethoscope"></i>
+        Instituto clínico de diagnóstico
+      </h1>
+      <nav>
+        <a href="./index.html">Inicio</a>
+        <a href="./acercade.html">Quiénes somos</a>
+        <a href="./turnos.html">Turnos</a>
+        <a href="./contacto.html">Contacto</a>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Solicitar turno</h2>
+      <form>
+        <fieldset>
+          Datos personales
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" />
+          <label for="apellido">Apellido</label>
+          <input type="text" id="apellido" />
+          <label for="dni">DNI</label>
+          <input type="number" id="dni" />
+          <input type="radio" name="abono" />Particular
+          <input type="radio" name="abono" />Obra social
+          <label for="obrasocial">Si presenta Obra Social, ¿cuál?</label>
+          <input type="text" id="obrasocial" />
+        </fieldset>
+        <fieldset>
+          Datos del turno
+          <label for="medico">Médico</label>
+          <select id="medico">
+            <option value="1">
+              Dra. Marina Fernandez - Especialista en Medicina Interna y
+              gerontología
+            </option>
+            <option value="2">
+              Dr. Juan Rodriguez - Especialista en Reumatología
+            </option>
+            <option value="3">
+              Dra. Sofía Perez - Especialista en Infectología
+            </option>
+            <option value="4">
+              Dr. Manuel Salazar - Especialista en Clínica Médica
+            </option>
+            <option value="5">
+              Dra. Susana Gomez - Especialista en Hematología
+            </option>
+          </select>
+          <label for="fecha">Fecha</label>
+          <select id="fecha">
+            <option value="1">Lunes 1 de abril</option>
+            <option value="2">Lunes 8 de abril</option>
+            <option value="3">Lunes 15 de abril</option>
+            <option value="4">Lunes 22 de abril</option>
+            <option value="5">Lunes 29 de abril</option>
+          </select>
+          <label for="horario">Horario disponibel</label>
+          <select id="horario">
+            <option value="1">15:00hs</option>
+            <option value="2">15:30hs</option>
+            <option value="3">16:00hs</option>
+            <option value="4">16:30hs</option>
+            <option value="5">17:00hs</option>
+          </select>
+          <label for="confirmarturno"></label>
+          <input type="submit" id="confirmarturno" value="Confirmar turno" />
+        </fieldset>
+      </form>
+    </main>
+    <footer>
+      <i class="fa-solid fa-hospital"></i>
+      <p>Soler 1234, CABA</p>
+      <i class="fa-solid fa-phone"></i>
+      <p>011 8765432</p>
+      <i class="fa-solid fa-envelope"></i>
+      <a href="mailto:info@institutoclinico.com">info@institutoclinico.com</a>
+      <i class="fa-solid fa-map-location-dot"></i>
+      <p>Ubicación</p>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.659995993273!2d-58.42684252557586!3d-34.587468756637996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb586dbc4d559%3A0xde7825c89ea34e58!2sSoler%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1712520865159!5m2!1ses-419!2sar"
+        width="200"
+        height="200"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </footer>
+  </body>
+</html>

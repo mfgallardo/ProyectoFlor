@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <script
+      src="https://kit.fontawesome.com/147c328576.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" href="./imagenes/Estetoscopio.ico" />
+    <link rel="stylesheet" href="./css/contacto.css" />
+  </head>
+  <body>
+    <header>
+      <h1>
+        <i class="fa-solid fa-stethoscope"></i>
+        Instituto clínico de diagnóstico
+      </h1>
+      <nav>
+        <a href="./index.html">Inicio</a>
+        <a href="./acercade.html">Quiénes somos</a>
+        <a href="./turnos.html">Turnos</a>
+        <a href="./contacto.html">Contacto</a>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Contacto</h2>
+      <form action="#" method="post" enctype="multipart/form-data">
+        <label class="item1" for="nombre">Nombre</label>
+        <input class="item1" type="text" id="nombre" name="nombre" />
+        <label class="item2" for="apellido">Apellido</label>
+        <input class="item2" type="text" id="apellido" name="apellido" />
+        <label class="item3" for="mail">Mail de contacto</label>
+        <input class="item3" type="email" id="mail" name="mail" />
+        <label class="item4" for="telefono">Teléfono</label>
+        <input class="item4" type="tel" id="telefono" name="telefono" />
+        <label class="item5" for="region">Región donde vive</label>
+        <input class="item5" type="radio" id="region" value="CABA" />CABA
+        <input class="item5" type="radio" value="AMBA" />AMBA
+        <input class="item5" type="radio" value="Interior del país" />Interior
+        del país
+        <label class="item6" for="consulta">Escriba su consulta</label>
+        <input class="item6" type="text" id="consulta" name="consulta" />
+        <label class="item7" for="imagen">Seleccione una imagen</label>
+        <input class="item7" type="file" id="imagen" accept="imagen/*" />
+        <label class="item9" for="respuesta">Medio de contacto preferido</label>
+        <select class="item9" id="respuesta">
+          <option>Correo</option>
+          <option>Teléfono</option>
+        </select>
+        <input class="item8" type="submit" value="Enviar" />
+      </form>
+    </main>
+    <footer>
+      <i class="fa-solid fa-hospital"></i>
+      <p>Soler 1234, CABA</p>
+      <i class="fa-solid fa-phone"></i>
+      <p>011 8765432</p>
+      <i class="fa-solid fa-envelope"></i>
+      <a href="mailto:info@institutoclinico.com">info@institutoclinico.com</a>
+      <i class="fa-solid fa-map-location-dot"></i>
+      <p>Ubicación</p>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.659995993273!2d-58.42684252557586!3d-34.587468756637996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb586dbc4d559%3A0xde7825c89ea34e58!2sSoler%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1712520865159!5m2!1ses-419!2sar"
+        width="200"
+        height="200"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </footer>
+  </body>
+</html>
